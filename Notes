@@ -26,12 +26,19 @@ The Agile SDLC model was primarily designed to help a project to adapt to change
 we use agile model as it's more easy to change in every phase and cost & time effective.
 Example:
 Mobile Applications use agile approach as they may require frequent updates if user requirements are changed.
+Scrum is a Framework of getting work done in agile approach. 
+Agile can be improved using scrum methodologies as daily discussions are taken place in scrum.
 
 4) Who is Scrum Master
-
-A Scrum Master is a coach and facilitator and coaches the development team
+Makes sure that the team members are well trained to follow Agile practices appropriately.
+Also, Scrum mster coaches the teams and mentions the timeline to finish the project on the time and budget.
 
 5) Differentiate between Product/Sprint Backlog
+Product backlog is a priority list of user requirements & product owner owns the product backlog and he is the one who prioritize it based on the feedbacks or business value.
+Sprint backlog is a part of the product backlog. 
+Each sprint, scrumteam picks the user story from each product backlog, no. of user story picked by scrum team is based on the avg velocity of scrum team.
+
+
 6) What is Epic & Story
 7) What is called Velocity in SCRUM
 8) Explain the SCRUM ceremonies
