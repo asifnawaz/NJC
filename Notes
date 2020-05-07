@@ -1,15 +1,3 @@
-Service Oriented Architecture:
-Middle and large organisation
-Spliting in different modules
-Services > Login
-Services > Signup
-
-Microservice oriented architecture
-Small organisation
-
-Services > Login > Verification, Permissions
-Services > Signup > Verification, Permissions
-
 1) Explain SDLC at a high level
 Phases: Software Development Life Cycle (SDLC) is a term which is used to explain how the software is delivered to customer.
 Requirements Analysis, design, development, testing & maintenance.
@@ -39,11 +27,43 @@ Sprint backlog is a part of the product backlog.
 Each sprint, scrumteam picks the user story from each product backlog.
 
 6) What is Epic & Story
+Epic: Customer will come and explain a big story how he wanted to improve his product.
+Story: From a one particular epic you can make 100 different stories. Using stories developer can identify different requirements.
+'Epic' is based on the user end product scenario.
+
 7) What is called Velocity in SCRUM
 no. of user story picked by scrum team from product backlog is based on the avg velocity of scrum team.
 
 8) Explain the SCRUM ceremonies
+
+Organizing the backlog: devs manage and update backlogs of the stories.
+Sprint Planning: Tell devs to rate stories in this stage 'fibonacci sequence' is used. 
+Sprints: Agreement or negotiations will happen in this stage. Then finalise the sprints.
+Sprint execution: We execute selected sprints in this stage.
+Daily scrum: daily scrum meeting are held in this stage to tackle issues and obstacles. for eg. need access to any db etc.
+Sprint review: In this stage the higher member of team decide to review the obstacles e.g. giving access to db. All members contribute in reviewing.
+Sprint retrospective: Scrum master does overall analysis to identify failures and obstacles to improve the performance.
+
 9) What is grooming
+Filter the backlog to ensure it has relevant items.
+Assign priorities to the items present. eg fibonacci series
+Discuss each item in detail, get enough clarity from test/development view.
+
 10) How Jira board is effective in SCRUM
+Jira unites teams around a single goal and promotes iterative, incremental delivery.
+
 11) Differentiate between SCRUM & Waterfall
+Waterfall: Takes extra time in reviewing as it's done at the result only.
+Scrum: Saves time as reviewing is done in regular sprints in the development process.
+
+Waterfall: work is divided in phases. Team works closely.
+Scrum: Work is divided in team as an individual responsibility.
+
+Waterfall: works well with the small project.
+Scrum: works well with medium, large and complex projects
+
 12) Explain the responsibilities of Product Owner
+Create and maintain the Product Backlog
+Prioritize the features in the Backlog before Sprint.
+Helping the Scrum Master organize Sprint Review Meetings.
+Attend Sprint Planning meetings.
