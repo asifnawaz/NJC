@@ -9,3 +9,33 @@ Small organisation
 
 Services > Login > Verification, Permissions
 Services > Signup > Verification, Permissions
+
+1) Explain SDLC at a high level
+Phases: Software Development Life Cycle (SDLC) is a term which is used to explain how the software is delivered to customer.
+Requirements Analysis, design, development, testing & maintenance.
+2) What is waterfall and why it is still relevant
+When the requirements are clear and no changes are required waterfall process models are used.
+Pros:
+Complete project on time and budget.
+Cons:
+Cannot be changed, takes a lot of time and budget.
+We can reuse modules using waterfall approach.
+
+3) Explain Agile Model with a use case and the role of SCRUM in that
+The Agile SDLC model was primarily designed to help a project to adapt to change requests quickly, or when the continous changes are required 
+we use agile model as it's more easy to change in every phase and cost & time effective.
+Example:
+Mobile Applications use agile approach as they may require frequent updates if user requirements are changed.
+
+4) Who is Scrum Master
+
+A Scrum Master is a coach and facilitator and coaches the development team
+
+5) Differentiate between Product/Sprint Backlog
+6) What is Epic & Story
+7) What is called Velocity in SCRUM
+8) Explain the SCRUM ceremonies
+9) What is grooming
+10) How Jira board is effective in SCRUM
+11) Differentiate between SCRUM & Waterfall
+12) Explain the responsibilities of Product Owner
