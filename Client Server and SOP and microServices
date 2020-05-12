@@ -1,3 +1,6 @@
+Client-Server
+------------
+
 What is a Web server in a client server environment?
 Web server is used internally and is not exposed to the public, It is used to deliver content to the users and it is mostly served over http protocol.
 
@@ -19,4 +22,60 @@ Tier 3 is known as Presentation Tier system and consists of the user interface a
 
 What is a File server?
 A file server does not normally perform computational tasks or run programs on behalf of its client workstations and commonly found in schools and offices, where users use a local area network to connect their client computers.
+
+SOA & MicroServices
+------------------
+What are the main benefits of SOA?
+Flexibility, improves security, enhances scalability, and tailored requirements or needs.
+
+How can you achieve loose coupling in SOA
+Using enterprise service bus, Business Process Management and service oriented integration.
+
+
+Are web services and SOA the same?
+Service Oriented Architecture is an architectural concept which focuses on having different services communicating with each other to carry out a bigger job.
+Whereas, A web service is a basic building block in a SOA.
+
+What is a reusable service?
+Reusable services are designed so that their solution logic is independent of any business process or technology.
+
+What are the disadvantages of SOA?
+High Bandwidth Server, extra overload, high cost
+
+What is ESB and where does it fit in?
+An enterprise service bus (ESB) implements a communication system between mutually interacting software applications in a service-oriented architecture (SOA).
+
+In SOA do we need to build a system from scratch?
+There are many platforms available so no need to build a system from scratch. E.g. Mulesoft
+
+What is the most important skill needed to adopt SOA? technical or cultural?
+Technical
+
+List down the advantages of Microservices Architecture.
+Microservices Make On-Boarding Easier
+Reduce Risk
+Provide Flexible Data Storage
+Increase Fault Tolerance and Fault Isolation
+Faster project development
+
+What are the best practices to design Microservices?
+When you're building a complex system we can use microservices. e.g. netflix, google api services , microsoft api services etc.
+
+How does Microservice Architecture work?
+Using API Gateway, Identity providers, messaging formats etc
+
+What are the pros and cons of Microservice Architecture?
+pros: INDEPENDENT,TARGETED, FLEXIBLE and ROBUST 
+cons: REFACTORING , COMPLEXITY , TESTING and PERFORMANCE 
+
+What is the difference between Monolithic, SOA and Microservices Architecture?
+SOA: Services can depend on other services or resources such as a centralized database
+Microservices: Designed to be independently deployable ideally with no external dependencies, so that they can be scaled separately
+Monolithic is similar to a big container wherein all the software components of an application are assembled together and tightly packaged.
+
+What are the challenges you face while working Microservice Architectures?
+System overload caching must be done and Security 
+
+What are the characteristics of Microservices?
+Autonomous and Specialized
 
