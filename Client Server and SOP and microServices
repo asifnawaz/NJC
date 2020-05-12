@@ -1,0 +1,22 @@
+What is a Web server in a client server environment?
+Web server is used internally and is not exposed to the public, It is used to deliver content to the users and it is mostly served over http protocol.
+
+What is the role of the presentation layer?
+The presentation tier is the front-end layer and it is used to make data graphically present to the end user.
+
+They say this architecture is secure, how is it done in your opinion?
+Because this user interface is often a graphical one accessible through a web browser or web-based application and which displays content and information useful to an end user.
+
+What is a Database Server in a client server environment?
+Database server is the back-end portion of a database application, following the traditional client-server model
+
+What are Super servers in client server environments?
+Mostly, A super server is programmed to start other servers as necessary.
+
+Explain 2-Tier and 3-Tier architecture
+Tier-2 Is known as application layer and it contains the functional business logic which drives an application’s core capabilities, it’s often written on Java, python, php etc.
+Tier 3 is known as Presentation Tier system and consists of the user interface and usually built on web development frameworks, such as CSS or JavaScript, and communicates with other tiers by sending results to the browser and other tiers in the network through API calls.
+
+What is a File server?
+A file server does not normally perform computational tasks or run programs on behalf of its client workstations and commonly found in schools and offices, where users use a local area network to connect their client computers.
+
