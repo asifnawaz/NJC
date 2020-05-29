@@ -400,4 +400,66 @@ Unit Tests Should Be Trustworthy, Unit Tests Should Be Maintainable and Readable
 What is Mocking?
 Mocking is creating objects that simulate the behavior of real objects.
 
+GIT
+------
+
+
+What is GIT and its significance in SDLC
+GIT:
+Git is an Open Source Distributed Version Control System. Now that’s a lot of words to define Git.
+
+SDLC:
+Besides the benefits of flexibility and distribution, there are key functions of Git that support and enhance agile development. 
+
+What is the difference between GIT and SVN?
+GIT is distributed, SVN is not.
+GIT the contents of the way by meta data storage and SVN is by file.
+The GIT branch and the branch of SVN are different.
+GIT does not have a global version number, and SVN has a global version number.
+GIT content integrity is better than SVN.
+
+What are the advantages of using GIT?
+Track changes in your code across versions: When multiple people collaborate on a project, it’s hard to keep track revisions—who changed what, when, and where those files are stored. 
+                                            GitHub takes care of this problem by keeping track of all the changes that have been pushed to the repository.
+Integration options: GitHub can integrate with common platforms such as Amazon and Google Cloud, services
+Showcase your work: Are you a developer and wishes to attract recruiters? GitHub is the best tool you can rely on for this. 
+Documentation: By using GitHub, you make it easier to get excellent documentation
+It makes it easy to contribute to your open source projects
+
+What is “Staging Area” or “Index” in GIT?
+Index:
+The index (or any of its other names) is essentially a "holding area" for changes that will be committed when you next do git commit.
+Staging:
+Staging helps you split up one large change into multiple commits. You can use git add -p or, with newer gits, git add -e.
+
+What is GIT stash?
+Hit stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
+
+What is the function of git clone?
+Cloning is a process of creating an identical copy of a Git Remote Repository to the local machine.
+Cloning in Git can be done on the self-owned repository or anyone else’s repository. 
+
+How can you create a repository in Git?
+Open or create a directory by using mkdir [directoryname] or cd [directoryname]
+then git init to Initialize Bare Git Repository for the Project.
+
+What is the purpose of branching in GIT?
+A common way to use git branching is to maintain one “main” or “trunk” branch and create new branches to implement new features.
+
+What is the difference between ‘git remote’ and ‘git clone’?
+git remote adds a reference to a remote repository for further tracking, while git clone, clones locally a remote repository.
+
+What is the function of ‘git diff ’ in git?
+Diff command is used in git to track the difference between the changes made on a file. 
+
+Explain what the commit message is?
+Basically git commit "records changes to the repository" - adding comments about the changes.
+
+Why is it advisable to create an additional commit rather than amending an existing commit?
+The amend operation will destroy the state that was previously saved in a commit. 
+If you will create a new commit then it's more convinient to trace later if any errors occur in the program.
+
+What is Rebasing
+In Git, there are two main ways to integrate changes from one branch into another: the merge and the rebase. 
+With the rebase command, you can take all the changes that were committed on one branch and replay them on a different branch.
 
