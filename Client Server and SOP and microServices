@@ -140,6 +140,71 @@ HTTPS is the secured HTTP protocol required to send and receive information secu
 
 Introduction to API
 ---------------------------
+Explain REST and RESTFUL?
+REST:
+1.Rest(Representational State Transfer)is a style of software architecture.
+2.The Rest Service is simple to use it HTTP protocol for all opeartions.
+3.Its lightweight and faster(it use the.JSON and .XML formats).
+RESTFULL:
+1.RestFULL(Representational State Transfer)is a style of software architecture.
+2.It uses the Complex Mechanisim like SOAP for Communication.
+3.WCF service will allows to make calls and exchange the data using SOAP protocol over different protocols (HTTP, TCP, MSMQ etc..).
 
+Mention what are the HTTP methods supported by REST?
+* GET is only used to request data from a specified resource. Get requests can be cached and bookmarked. It remains in the browser history and haS length restrictions. GET requests should never be used when dealing with sensitive data.
+* POST is used to send data to a server to create/update a resource. POST requests are never cached and bookmarked and do not remain in the browser history.
+* PUT replaces all current representations of the target resource with the request payload.
+* DELETE removes the specified resource.
+* OPTIONS is used to describe the communication options for the target resource.
+* HEAD asks for a response identical to that of a GET request, but without the response body.
+
+Explain the architectural style for creating web API?
+REST is one of the most popular architecture to implement Web API.
+
+Explain the RESTFul Web Service?
+Restful Web Service is a lightweight, maintainable, and scalable service that is built on the REST architecture.
+
+Explain what is a “Resource” in REST?
+Resource in REST is a similar Object in Object Oriented Programming or is like an Entity in a Database.
+
+Which protocol is used by RESTful web services?
+HTTP Protocol.
+
+What is messaging in RESTful web services?
+A client sends a message in form of a HTTP Request and the server responds in the form of an HTTP Response. This technique is termed as Messaging.
+
+State the core components of an HTTP Request?
+methods like GET, PUT, POST, etc.
+
+State the core components of an HTTP response?
+This contains various codes which determine the status of the server response.
+
+What do you understand about payload in RESTFul web service?
+Typically the term payload refers to JSON -formatted text that is either posted via an http request.
+
+Explain the caching mechanism?
+The caching principle is very general but it is best known for its use in speeding up the CPU or to reduce the server load.
+
+List the main differences between SOAP and REST?
+SOAP needs more bandwidth for its usage whereas REST doesn’t need much bandwidth. 
+SOAP only works with XML formats whereas REST work with plain text, XML, HTML and JSON.
+
+Enlist advantages and disadvantages of ‘Statelessness’.
+Pros: 
+A stateless system is one that has no resident memory used to store information between sessions.
+They do not keep and store information about users or user activity after a user has left a site.
+The maintaining parties don't have the responsibility of managing the resident memory.
+Stateless applications can be less costly than a similar stateful application. 
+Less complex
+Cons:
+Stateful systems, on the other hand, will put input into resident memory and store it for future operations.
+Stateful applications can be more costly than a similar stateless application. 
+Stateless will not keep information about a particular user session.
+Stateless systems are inherently less capable.
+It may be annoying to users to not have certain session information stored. 
+
+
+Object Oriented Programming Fundamentals
+-----------------------------------------
 
 
