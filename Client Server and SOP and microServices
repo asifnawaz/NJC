@@ -357,4 +357,47 @@ Polymorphism:
 Polymorphism refers to the ability to take into different forms or stages. 
 Polymorphism is the ability of an object to change behavior on runtime
 
+Unit Testing & JUnit
+-----------------------
+
+
+What is unit testing?
+Unit tests are basically written and executed by software developers to make sure that code meets its design and requirements and behaves as expected.
+
+What is the difference between manual testing and automated testing?
+Manual testing is carried out by human whereas automated testing is the testing performed by the software in an automated way.
+
+Is it necessary to write the test case for every logic? If yes, why
+Yes, because if you need to check your logic giving the expected output.
+
+What are the features of JUnit?
+JUnit is an open source framework, which is used for writing and running tests.
+JUnit tests allow you to write codes faster, which increases quality.
+JUnit is elegantly simple. It is less complex and takes less time.
+
+What are the important JUnit annotations? And its usage in coding
+JUNIT ANNOTATIONS is a special form of syntactic meta-data that can be added to Java source code for better code readability and structure.
+E.g. using @Test for test cases.
+
+What does Assert class?
+Assert classes is needed when you need to use it's methods.
+E.g.
+ //Assert statements		
+        assertEquals(string1,string2);					
+        assertSame(string3, string4);					
+        assertNotSame(string1, string3);					
+        assertNotNull(string1);			
+        assertNull(string5);			
+        assertTrue(variable1<variable2);					
+        assertArrayEquals(airethematicArrary1, airethematicArrary2);					
+
+What is Code Coverage?
+Code coverage is a term used in software testing to describe how much program source code is covered by a testing plan. 
+
+What are the best practices to perform Unit Testing?
+Unit Tests Should Be Trustworthy, Unit Tests Should Be Maintainable and Readable, Unit Tests Should Verify a Single Use Case and Unit Tests Should Be Automated.
+
+What is Mocking?
+Mocking is creating objects that simulate the behavior of real objects.
+
 
