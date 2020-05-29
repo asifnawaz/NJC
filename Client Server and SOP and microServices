@@ -79,3 +79,67 @@ System overload caching must be done and Security
 What are the characteristics of Microservices?
 Autonomous and Specialized
 
+HTTP Fundamentals
+-------------------------------
+What are the basic Features of HTTP?
+There are Three basic features of HTTP:
+HTTP is connectionless, media independent and stateless.
+
+What are request methods in HTTP?
+The request method indicates the method to be performed on the resource identified by the given Request URI.
+Request Methods:
+GET, PUT, DELETE, POST, CONNECT, OPTIONS, TRACE.
+
+What are the differences between GET and POST methods?
+Get methods are defined in URL parameters and POST are methods are sent via a form.
+
+What is status code in HTTP?
+The Status-Code element in a server response and it is a 3-digit integer.
+e.g.
+1xx: Informational
+2xx: Success
+3xx: Redirection
+4xx: Client Error
+5xx: Server Error
+
+What are the header fields in HTTP?
+HTTP header fields provide required information about the request or response.
+There are four types of headers:
+General, Client Request, Server Response & Entity header.
+
+What is URI?
+A Uniform Resource Identifier (URI) is a string of characters that unambiguously identifies a particular resource.
+
+What are Idempotent methods and why do we call them?
+A request method is considered "idempotent" if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request.
++---------+------+------------+
+| Method  | Safe | Idempotent |
++---------+------+------------+
+| CONNECT | no   | no         |
+| DELETE  | no   | yes        |
+| GET     | yes  | yes        |
+| HEAD    | yes  | yes        |
+| OPTIONS | yes  | yes        |
+| POST    | no   | no         |
+| PUT     | no   | yes        |
+| TRACE   | yes  | yes        |
++---------+------+------------+  
+
+Explain HTTP Request & Response Messages
+What is Session State in HTTP?
+HTTP stands for HyperText Transfer Protocol.
+HTTP REQUEST: After receiving and interpreting a request message, a server responds with an HTTP response message:
+* A Status-line
+* Zero or more header (General|Response|Entity) fields followed by CRLF
+* An empty line (i.e., a line with nothing preceding the CRLF) indicating the end of the header fields.
+* Optionally a message-body
+HTTP SESSION: Web Servers have a short term memory and this short memory is saved into a browser known as HTTP Session.
+
+What is HTTPS?
+HTTPS is the secured HTTP protocol required to send and receive information securely over internet.
+
+Introduction to API
+---------------------------
+
+
+
