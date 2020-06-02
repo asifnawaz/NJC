@@ -20,4 +20,4 @@ output application/json
 ".
 
 ·       Are the payload, variables, and attributes accessible in all of the flows in the Mule application?
-No
+Yes
