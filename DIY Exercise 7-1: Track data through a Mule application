@@ -18,3 +18,6 @@ output application/json
     requesterID: attributes.headers.'requester-id'
 }
 ".
+
+·       Are the payload, variables, and attributes accessible in all of the flows in the Mule application?
+Yes
