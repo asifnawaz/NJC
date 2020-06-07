@@ -21,3 +21,112 @@ output application/json
 
 ·       Are the payload, variables, and attributes accessible in all of the flows in the Mule application?
 Yes
+
+
+·       What is the result of a web client request to /flights?
+
+
+{
+  "payload-GET": [
+    {
+      "planeType": "Boeing 737",
+      "code2": "1093",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-02-11",
+      "fromAirport": "MUA",
+      "price": 142,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "1",
+      "ID": 5,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 777",
+      "code2": "1994",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-01-01",
+      "fromAirport": "MUA",
+      "price": 676,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "none",
+      "ID": 7,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 737",
+      "code2": "2000",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-02-20",
+      "fromAirport": "MUA",
+      "price": 300,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "30",
+      "ID": 8,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 737",
+      "code2": "3000",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-02-01",
+      "fromAirport": "MUA",
+      "price": 900,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "none",
+      "ID": 9,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 737",
+      "code2": "4567",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-01-20",
+      "fromAirport": "MUA",
+      "price": 456,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "100",
+      "ID": 11,
+      "code1": "rree"
+    }
+  ],
+  "payload-PROCESS": {
+    "payload": [
+      {
+        "planeType": "Boeing 737",
+        "flightDate": "2018-02-11",
+        "price": 142
+      },
+      {
+        "planeType": "Boeing 777",
+        "flightDate": "2018-01-01",
+        "price": 676
+      },
+      {
+        "planeType": "Boeing 737",
+        "flightDate": "2018-02-20",
+        "price": 300
+      },
+      {
+        "planeType": "Boeing 737",
+        "flightDate": "2018-02-01",
+        "price": 900
+      },
+      {
+        "planeType": "Boeing 737",
+        "flightDate": "2018-01-20",
+        "price": 456
+      }
+    ],
+    "destination": "SFO",
+    "requesterID": null
+  },
+  "destination-process": "SFO",
+  "requesterID-process": null
+}
+
+·       Are the payload, variables, and attributes accessible in all of the flows in the Mule application?
+No because we removed one flow reference.
+
+·       What data is accessible after crossing a connection boundary (with the HTTP Request)?
+Data we receive from http://mu.learn.mulesoft.com/american/{destination}
+
