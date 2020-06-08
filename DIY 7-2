@@ -1,0 +1,177 @@
+What is the result of the request to /flights?
+HTTP POST on resource 'http://mu.learn.mulesoft.com:80/processData' failed: not found (404).
+
+ Are the payload, variables, and attributes accessible in all of the flows in the Mule application?
+No
+
+ What data is accessible within the processData flow?
+payload
+
+"Cannot coerce Binary { encoding: UTF-8, mediaType: */*; charset=UTF-8, mimeType: */*, raw: org.mule.weave.v2.el.SeekableCursorStream@47f078a4, class: org.mule.runtime.core.internal.streaming.bytes.ManagedCursorStreamProvider } ("" as Binary {base: "64"}) to Array
+
+5| 	payload: message.payload as Array map ((object) ->
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+Trace:
+  at map (line: 5, column: 11)
+  at main (line: 5, column: 36)" evaluating expression: "%dw 2.0
+output application/json
+---
+{
+	payload: payload as Array map ((object) ->
+		{
+			planeType: object.planeType,
+			flightDate: object.takeOffDate,
+			price: object.price
+		}
+	),
+    destination: vars.destination,
+    requesterID: vars.'requester-id',
+	date: attributes.headers.'date'
+}
+".
+
+ What data is still accessible in the flow after completing the HTTP Request operation?
+Only post data is accessible
+
+·       What is the result of the request to /flights?
+{
+  "payload-GET": [
+    {
+      "planeType": "Boeing 737",
+      "code2": "1093",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-02-11",
+      "fromAirport": "MUA",
+      "price": 142,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "1",
+      "ID": 5,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 777",
+      "code2": "1994",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-01-01",
+      "fromAirport": "MUA",
+      "price": 676,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "none",
+      "ID": 7,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 737",
+      "code2": "2000",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-02-20",
+      "fromAirport": "MUA",
+      "price": 300,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "30",
+      "ID": 8,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 737",
+      "code2": "3000",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-02-01",
+      "fromAirport": "MUA",
+      "price": 900,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "none",
+      "ID": 9,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 737",
+      "code2": "4567",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-01-20",
+      "fromAirport": "MUA",
+      "price": 456,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "100",
+      "ID": 11,
+      "code1": "rree"
+    }
+  ],
+  "payload-PROCESS": [
+    {
+      "planeType": "Boeing 737",
+      "code2": "1093",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-02-11",
+      "fromAirport": "MUA",
+      "price": 142,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "1",
+      "ID": 5,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 777",
+      "code2": "1994",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-01-01",
+      "fromAirport": "MUA",
+      "price": 676,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "none",
+      "ID": 7,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 737",
+      "code2": "2000",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-02-20",
+      "fromAirport": "MUA",
+      "price": 300,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "30",
+      "ID": 8,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 737",
+      "code2": "3000",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-02-01",
+      "fromAirport": "MUA",
+      "price": 900,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "none",
+      "ID": 9,
+      "code1": "rree"
+    },
+    {
+      "planeType": "Boeing 737",
+      "code2": "4567",
+      "toAirport": "SFO",
+      "takeOffDate": "2018-01-20",
+      "fromAirport": "MUA",
+      "price": 456,
+      "airlineName": "American Airlines",
+      "seatsAvailable": "100",
+      "ID": 11,
+      "code1": "rree"
+    }
+  ],
+  "destination-process": "SFO",
+  "requesterID-process": null
+}
+
+·       Are the payload, variable, and attributes accessible throughout all flows called in the Mule application?
+Yes excluding date variable because it has not been created.
+·       What data is preserved within the processData flow?
+processData request and transform message 
+
+·       What happens if you do not set the -M-Denv=dev parameters when you run the Mule application?
+It will throw an error 
+Couldn't find configuration property value for key ${env}
+
+·       What happens if you instead try to use -M-Denv=stage when you run the Mule application?
+If stage file properties file is not avaialble it will throw an error about missing *-properties.xml file
+
